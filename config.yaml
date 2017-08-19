@@ -1,0 +1,63 @@
+baseUrl: "https://diti.me/"
+title: "Diti [dot] me"
+theme: "ditiv1"
+
+params:
+  ghrepo: "https://github.com/Diti/diti.me"
+
+enableGitInfo: true
+
+sectionPagesMenu: "main"
+menu:
+  main:
+    - name: "Posts"
+      identifier: "post"
+      url: "/post/"
+      weight: 10
+#    - name: "Projects"
+#      url: "./proj/"
+#      weight: 20
+#    - name: "Characters"
+#      identifier: "character"
+#      url: "/char/"
+#      weight: 30
+
+copyright: "{year} © Dimitri “Diti” Torterat"
+
+# i18n
+EnableMissingTranslationPlaceholders: true
+languages:
+  en:
+    languageCode: "en"
+    languageName: "🇬🇧 English"
+  fr:
+    languageCode: "fr"
+    languageName: "🇫🇷 Français"
+
+permalinks:
+  char: "/char/:title/"
+  post: "/post/:title/"
+  page: "/:title/"
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+# Cosmetic & internal settings
+enableGitInfo: true
+
+blackfriday:
+  smartypants: false
+  fractions: false
+  smartDashes: false
+  plainIDAnchors: true
+canonifyUrls: true
+footnoteAnchorPrefix: "note-"
+footnoteReturnLinkContents: "↩"
+metadataFormat: "yaml"
+pygmentscodefences: true
+pygmentsuseclasses: true
+
+outputs:
+  home: [ "HTML", "RSS" ]
+  page: [ "HTML" ]

@@ -1,0 +1,29 @@
+- id: 'global.home'
+  translation: 'Home'
+
+- id: 'global.page_is_open-source'
+  translation: 'This page is *open source*. You may [improve it on GitHub]({{ .GhFileUrl }}).'
+
+- id: 'global.page_last_modified'
+  translation: '“{{ .Title }}” was last updated on {{ .Date }}.'
+
+- id: 'global.page_updates'
+  translation: 'Page updates'
+
+- id: 'shortcodes.latestContent.recent'
+  translation: 'Recent content'
+
+- id: 'shortcodes.latestContent.latest_posts'
+  translation:
+    one: 'Latest post'
+    other: 'Latest posts'
+
+- id: 'shortcodes.latestContent.latest_projs'
+  translation:
+    one: 'Latest project'
+    other: 'Latest projects'
+
+- id: 'shortcodes.latestContent.latest_reads'
+  translation:
+    one: 'Latest read'
+    other: 'Latest reads'
