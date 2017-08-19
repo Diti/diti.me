@@ -6,17 +6,18 @@ description:
 tags: [android]
 ---
 
+{{< figure
+  class="is-pulled-right"
+  alt="Screenshot of the final result"
+  src="/img/2017-08_android_simplest-way-to-add-icons-in-listview/screenshot-imagemenu-final_thumb.png"
+  link="/img/2017-08_android_simplest-way-to-add-icons-in-listview/screenshot-imagemenu-final_full.png"
+  caption="Did you know you don’t have to fiddle with custom layouts to get such a result?"
+>}}
+
 At my current job, I have been asked to merge my application with a legacy
 project, already approved by marketing. During normal use, the application would
 display a navigation [`ListView`](https://developer.android.com/guide/topics/ui/layout/listview.html)
 at launch.
-
-{{< figure
-  alt="Screenshot of the final result"
-  src="https://cdn-images-1.medium.com/max/800/1*WcDY0ubDj82zj-282xJ6Aw.png"
-  link="https://cdn-images-1.medium.com/max/1400/1*WcDY0ubDj82zj-282xJ6Aw.png"
-  caption="Did you know you don’t have to fiddle with custom layouts to get such a result?"
->}}
 
 This post will explain how I set up such a list, to act as a reminder
 whenever I need to quickly implement it again.
