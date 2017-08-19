@@ -5,7 +5,7 @@
   translation: 'Cette page est *open source*. Vous pouvez [l’améliorer sur GitHub]({{ .GhFileUrl }}).'
 
 - id: 'global.page_last_modified'
-  translation: '« {{ .Title }} » a été mise à jour pour la dernière fois le {{ .Lastmod.Format "2006-01-02" }}.'
+  translation: '« {{ .Title }} » a été mise à jour pour la dernière fois le {{ .Date }}.'
 
 - id: 'global.page_updates'
   translation: 'Mises à jour de la page'
