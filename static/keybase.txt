@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/diti
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://diti.me
+  * I am diti (https://keybase.io/diti) on keybase.
+  * I have a public key ASBgn_8nkBx_BEET2v22sXQj5KthqEf9xnsCu86mhrXodAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101e9ee3ce35db1522db25bc6dd0f5304a769a5b0753a72b3913bb47c3a4d3ab1310a",
+            "host": "keybase.io",
+            "kid": "0120609fff27901c7f044113dafdb6b17423e4ab61a847fdc67b02bbcea686b5e8740a",
+            "uid": "c2c08aa58225e3c1ac0a57e825506b00",
+            "username": "diti"
+        },
+        "service": {
+            "hostname": "diti.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.6"
+    },
+    "ctime": 1450829926,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1450829842,
+        "hash": "87fcb16eee6173db351a67d3d4588311bbc650ce0e92ef811915327b340363a5a02d00768f39b33610a1a77cd4f50cebc6ea6919ba696f12d223813c07c26b48",
+        "seqno": 337724
+    },
+    "prev": "06aa51ee6135709057337a8a061ac1cbc12968dd5f337b96387aef4f55146387",
+    "seqno": 44,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgYJ//J5AcfwRBE9r9trF0I+SrYahH/cZ7ArvOpoa16HQKp3BheWxvYWTFAut7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxZTllZTNjZTM1ZGIxNTIyZGIyNWJjNmRkMGY1MzA0YTc2OWE1YjA3NTNhNzJiMzkxM2JiNDdjM2E0ZDNhYjEzMTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNjA5ZmZmMjc5MDFjN2YwNDQxMTNkYWZkYjZiMTc0MjNlNGFiNjFhODQ3ZmRjNjdiMDJiYmNlYTY4NmI1ZTg3NDBhIiwidWlkIjoiYzJjMDhhYTU4MjI1ZTNjMWFjMGE1N2U4MjU1MDZiMDAiLCJ1c2VybmFtZSI6ImRpdGkifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImRpdGkubWUiLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC42In0sImN0aW1lIjoxNDUwODI5OTI2LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NTA4Mjk4NDIsImhhc2giOiI4N2ZjYjE2ZWVlNjE3M2RiMzUxYTY3ZDNkNDU4ODMxMWJiYzY1MGNlMGU5MmVmODExOTE1MzI3YjM0MDM2M2E1YTAyZDAwNzY4ZjM5YjMzNjEwYTFhNzdjZDRmNTBjZWJjNmVhNjkxOWJhNjk2ZjEyZDIyMzgxM2MwN2MyNmI0OCIsInNlcW5vIjozMzc3MjR9LCJwcmV2IjoiMDZhYTUxZWU2MTM1NzA5MDU3MzM3YThhMDYxYWMxY2JjMTI5NjhkZDVmMzM3Yjk2Mzg3YWVmNGY1NTE0NjM4NyIsInNlcW5vIjo0NCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEBHZB6k1tGWKR7PNMrXya95upM0dU/R0hcKyc4X2rzNgSkLJP97R5UXHcw5+/MkVqSu23/HxDjkm1Jmal+AdjwFqHNpZ190eXBlIKN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/diti
+
+==================================================================
