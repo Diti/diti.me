@@ -35,9 +35,10 @@ languages:
     languageName: "🇫🇷 Français"
 
 permalinks:
-  char: "/char/:title/"
-  post: "/post/:title/"
+  character: "/char/:title/"
   page: "/:title/"
+  post: "/post/:title/"
+  read: "/read/:title/"
 
 taxonomies:
   tag: "tags"
