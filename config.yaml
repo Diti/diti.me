@@ -7,21 +7,6 @@ params:
 
 enableGitInfo: true
 
-sectionPagesMenu: "main"
-menu:
-  main:
-    - name: "Posts"
-      identifier: "post"
-      url: "/post/"
-      weight: 10
-#    - name: "Projects"
-#      url: "./proj/"
-#      weight: 20
-#    - name: "Characters"
-#      identifier: "character"
-#      url: "/char/"
-#      weight: 30
-
 copyright: "{year} © Dimitri “Diti” Torterat"
 
 # i18n
