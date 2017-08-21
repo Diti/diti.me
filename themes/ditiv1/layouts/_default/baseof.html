@@ -6,11 +6,14 @@
     {{ .Page.Title }} – {{ .Site.Title }}
   {{- end -}}
 </title>
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/bulma.css">
+<link rel="stylesheet" href="{{ "/css/bulma.css" | absURL }}">
 {{ if .IsTranslated -}}
   {{- range .Translations -}}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
   {{- end }}
+{{- end }}
+{{ range .AlternativeOutputFormats -}}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{- end }}
 
 <body>
