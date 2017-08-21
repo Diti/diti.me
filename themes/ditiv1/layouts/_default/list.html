@@ -1,21 +1,23 @@
 {{ define "main" -}}
   <h1 class="title">{{ .Title }}</h1>
-  {{ with .Content }}{{ . }}{{ end }}
+  <div class="content">
+    {{ .Content }}
 
-  {{- range .Data.Pages.GroupByDate "2006" }}
-    <h2>{{ .Key }}</h2>
+    {{- range .Data.Pages.GroupByDate "2006" }}
+      <h2>{{ .Key }}</h2>
 
-      {{- range .Pages }}
-        <div class="level">
-          <div class="level-left">
-            <span class="level-item"><a href="{{ .Permalink }}">{{ .Title }}</a></span>
+        {{- range .Pages }}
+          <div class="level">
+            <div class="level-left">
+              <span class="level-item"><a href="{{ .Permalink }}">{{ .Title }}</a></span>
+            </div>
+            <div class="level-right">
+              <span class="level-item"><time datetime="{{ .Date.Format "2006-01-02" }}"><span class="has-text-grey-light">{{ .Date.Format "2006-" }}</span>{{ .Date.Format "01-02" }}</time></span>
+            </div>
           </div>
-          <div class="level-right">
-            <span class="level-item"><time datetime="{{ .Date.Format "2006-01-02" }}"><span class="has-text-grey-light">{{ .Date.Format "2006-" }}</span>{{ .Date.Format "01-02" }}</time></span>
-          </div>
-        </div>
-      {{- end }}
-  {{ end }}
+        {{- end }}
+    {{ end }}
+</div>
 
 {{- end }}
 {{/* vim: set filetype=gohtmltmpl: */}}
