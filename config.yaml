@@ -7,7 +7,7 @@ params:
 
 enableGitInfo: true
 
-copyright: "{year} © Dimitri “Diti” Torterat"
+copyright: "© Dimitri “Diti” Torterat"
 
 # i18n
 EnableMissingTranslationPlaceholders: true
@@ -15,19 +15,18 @@ languages:
   en:
     languageCode: "en"
     languageName: "🇬🇧 English"
+    permalinks:
+      character: "/char/:title/"
   fr:
     languageCode: "fr"
     languageName: "🇫🇷 Français"
+    permalinks:
+      character: "/perso/:title/"
 
 permalinks:
-  character: "/char/:title/"
   page: "/:title/"
   post: "/post/:title/"
   read: "/read/:title/"
-
-taxonomies:
-  tag: "tags"
-  category: "categories"
 
 # Cosmetic & internal settings
 enableGitInfo: true
@@ -45,5 +44,7 @@ pygmentscodefences: true
 pygmentsuseclasses: true
 
 outputs:
-  home: [ "HTML", "RSS" ]
-  page: [ "HTML" ]
+  home: ["HTML", "RSS"]
+  page: ["HTML"]
+  section: ["HTML", "RSS"]
+  taxonomy: ["HTML", "RSS"]
