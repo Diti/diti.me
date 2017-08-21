@@ -10,6 +10,17 @@
 - id: 'global.page_updates'
   translation: 'Mises à jour de la page'
 
+- id: 'section.read.author'
+  translation:
+    one: 'Auteur'
+    other: 'Auteurs'
+
+- id: 'section.read.on_date'
+  translation: 'Lu le {{ .Date }}'
+
+- id: 'section.read.format'
+  translation: 'Format'
+
 - id: 'shortcodes.latestContent.recent'
   translation: 'Contenu récent'
 

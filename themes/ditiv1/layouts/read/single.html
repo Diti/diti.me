@@ -1,0 +1,21 @@
+{{ define "main" -}}
+  <h1 class="title">{{ .Title }}</h1>
+  <p class="subtitle">{{ i18n "section.read.on_date" (dict "Date" (.Date | dateFormat "2006-01-02")) }}</p>
+
+  <dl class="content">
+    {{ with .Params.authors -}}
+      <dt>{{ i18n "section.read.author" (len .) }}</dt>
+      <dd>{{ default . (delimit . ", ") }}</dd>
+    {{- end }}
+    {{ with .Params.format -}}
+      <dt>{{ i18n "section.read.format" }}</dt>
+      <dd>{{ . }}</dd>
+    {{- end }}
+  </dl>
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+{{- end }}
+{{/* vim: set filetype=gohtmltmpl: */}}
