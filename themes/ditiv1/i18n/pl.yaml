@@ -1,0 +1,40 @@
+- id: 'global.home'
+  translation: 'Strona główna'
+
+- id: 'global.page_is_open-source'
+  translation: 'Źródła tej strony są *otwarte*. Możesz [udoskonalić je na GitHub]({{ .GhFileUrl }}).'
+
+- id: 'global.page_last_modified'
+  translation: 'Ostatnia aktualizacja „{{ .Title }}” nastąpiła {{ .Date }}.'
+
+- id: 'global.page_updates'
+  translation: 'Aktualizacje strony'
+
+- id: 'section.read.author'
+  translation:
+    one: 'Autor'
+    other: 'Autorzy'
+
+- id: 'section.read.on_date'
+  translation: 'Przeczytano {{ .Date }}'
+
+- id: 'section.read.format'
+  translation: 'Format'
+
+- id: 'shortcodes.latestContent.recent'
+  translation: 'Ostatnio dodane'
+
+- id: 'shortcodes.latestContent.latest_posts'
+  translation:
+    one: 'Ostatni wpis'
+    other: 'Ostatnie wpisy'
+
+- id: 'shortcodes.latestContent.latest_projs'
+  translation:
+    one: 'Ostatni projekt'
+    other: 'Ostatnie projekty'
+
+- id: 'shortcodes.latestContent.latest_reads'
+  translation:
+    one: 'Ostatnio przeczytane'
+    other: 'Ostatnio przeczytane'
