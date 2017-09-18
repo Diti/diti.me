@@ -15,15 +15,12 @@ languages:
   en:
     languageCode: "en"
     languageName: "🇬🇧 English"
-    permalinks:
-      character: "/char/:title/"
   fr:
     languageCode: "fr"
     languageName: "🇫🇷 Français"
-    permalinks:
-      character: "/perso/:title/"
 
 permalinks:
+  char: "/read/:title/"
   page: "/:title/"
   post: "/post/:title/"
   read: "/read/:title/"
