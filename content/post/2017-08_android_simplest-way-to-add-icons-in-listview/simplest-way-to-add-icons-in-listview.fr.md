@@ -2,8 +2,10 @@
 title: Une manière simple d’ajouter des icônes à une ListView
 date: 2016-09-12T14:59:18+02:00
 description:
-  "Did you know you don’t have to fiddle with custom layouts to setup a ListView with icons?"
-tags: [android]
+  "Saviez-vous que l’on peut obtenir une ListView avec icônes sans utiliser de “custom layout” ?"
+categories: [Pengeek]
+tags: [Android]
+aliases: ["/fr/post/the-simplest-way-to-include-icons-in-a-listview/"]
 ---
 
 {{< figure
