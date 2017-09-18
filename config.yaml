@@ -18,9 +18,12 @@ languages:
   fr:
     languageCode: "fr"
     languageName: "🇫🇷 Français"
+  pl:
+    languageCode: "pl"
+    languageName: "🇵🇱 Polski"
 
 permalinks:
-  char: "/read/:title/"
+  char: "/char/:title/"
   page: "/:title/"
   post: "/post/:title/"
   read: "/read/:title/"
