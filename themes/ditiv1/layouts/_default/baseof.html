@@ -16,56 +16,60 @@
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{- end }}
 
-<nav class="navbar">
-  <div class="navbar-brand">
-    <a class="navbar-item{{- if .IsHome }} active {{- end }}" href="{{ "/" | absLangURL }}">{{ i18n "global.home" }}</a>
-  </div>
-  <div class="navbar-menu is-active">
-    <div class="navbar-start">
-      {{- range .Site.Menus.main }}
-        <a class="navbar-item{{- if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} active {{- end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-      {{- end }}
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item{{- if .IsHome }} active {{- end }}" href="{{ "/" | absLangURL }}">{{ i18n "global.home" }}</a>
     </div>
-    <div class="navbar-end">
-      {{- if .IsTranslated }}
-        {{- range .Translations }}
-          <a class="navbar-item" href="{{ .Permalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Title }}">{{ .Language.LanguageName }}</a>
+    <div class="navbar-menu is-active">
+      <div class="navbar-start">
+        {{- range .Site.Menus.main }}
+          <a class="navbar-item{{- if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} active {{- end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
         {{- end }}
-      {{- end }}
+      </div>
+      <div class="navbar-end">
+        {{- if .IsTranslated }}
+          {{- range .Translations }}
+            <a class="navbar-item" href="{{ .Permalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Title }}">{{ .Language.LanguageName }}</a>
+          {{- end }}
+        {{- end }}
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<section id="content" class="section">
-  <div class="container">
-    {{ block "main" . }}
-    {{ end }}
-  </div>
-</section>
-
-<section id="lastmod-opensource" class="section">
-  <div class="container">
-    <h2 style="display: none;" class="title">{{ i18n "global.page_updates" }}</h2>
-    <div class="content has-text-grey-light">
-      {{- $.Scratch.Set "lastMod" (.Lastmod) }}
-      {{- with .GitInfo }}
-        {{- $.Scratch.Set "lastMod" (.AuthorDate) }}
-        {{ printf "<!-- %s – “%s” – %s/commit/%s -->" .AbbreviatedHash .Subject $.Site.Params.ghrepo .Hash | safeHTML }}
-      {{- end }}
-      <p>{{ i18n "global.page_last_modified" (dict "Title" .Title "Date" ($.Scratch.Get "lastMod" | dateFormat "2006-01-02")) }}</p>
-      <p>{{ i18n "global.page_is_open-source" (dict "GhFileUrl" (printf "%s/blob/master/content/%s" $.Site.Params.ghrepo $.File.Path)) | markdownify }}</p>
+  <section id="content" class="section">
+    <div class="container">
+      {{ block "main" . }}
+      {{ end }}
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      {{- with .Site.Copyright }}
-        <p>{{ now.Year }} {{ . }}</p>
-      {{- end }}
+  <section id="lastmod-opensource" class="section">
+    <div class="container">
+      <h2 style="display: none;" class="title">{{ i18n "global.page_updates" }}</h2>
+      <div class="content has-text-grey-light">
+        {{- $.Scratch.Set "lastMod" (.Lastmod) }}
+        {{- with .GitInfo }}
+          {{- $.Scratch.Set "lastMod" (.AuthorDate) }}
+          {{ printf "<!-- %s – “%s” – %s/commit/%s -->" .AbbreviatedHash .Subject $.Site.Params.ghrepo .Hash | safeHTML }}
+        {{- end }}
+        <p>{{ i18n "global.page_last_modified" (dict "Title" .Title "Date" ($.Scratch.Get "lastMod" | dateFormat "2006-01-02")) }}</p>
+        <p>{{ i18n "global.page_is_open-source" (dict "GhFileUrl" (printf "%s/blob/master/content/%s" $.Site.Params.ghrepo $.File.Path)) | markdownify }}</p>
+      </div>
     </div>
-  </div>
-</footer>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        {{- with .Site.Copyright }}
+          <p>{{ now.Year }} {{ . }}</p>
+        {{- end }}
+      </div>
+    </div>
+  </footer>
+
+</body>
 
 {{/* vim: set filetype=gohtmltmpl: */}}
