@@ -1,16 +1,21 @@
 ---
-title: Android Apps for Absolute Beginners
-language: en
-author: Wallace Jackson
-rating: 3/5
+title: Android Apps for Absolute Beginners (1st edition)
+language: 🇬🇧
+authors:
+  - Wallace Jackson
+format: Kindle
+rating: 2.5/5
+date: 2011-11-26
 description: >-
   This book, which I bought on November 2011, taught me everything I needed to
   know about programming on Android with Java. I had no prior experience with
   the Java language and the Android SDK.
-date: 2011-11-26
-format: ebook
 link: https://www.amazon.com/dp/B00M0EYG0O
-tags: [AndroidDev, dev]
+categories:
+  - Pengeek
+tags:
+  - Android
+  - dev
 ---
 
 This book taught me everything I wanted to know about Android programming, and,
