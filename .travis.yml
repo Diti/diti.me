@@ -1,0 +1,16 @@
+language: go
+
+go:
+  - 1.9
+
+sudo: false
+
+branches:
+  only:
+    - master
+
+install:
+  go get -u -v github.com/spf13/hugo
+
+script:
+  sh healthcheck.sh
