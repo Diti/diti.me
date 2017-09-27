@@ -1,6 +1,6 @@
 ---
 title: Développez pour Android
-language: fr
+language: 🇫🇷
 author: [Cyril Mottier, Ludovic Perrier]
 rating: 4/5
 description: >-
