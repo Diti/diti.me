@@ -40,8 +40,9 @@ canonifyUrls: true
 footnoteAnchorPrefix: "note-"
 footnoteReturnLinkContents: "↩"
 metadataFormat: "yaml"
-pygmentscodefences: true
-pygmentsuseclasses: true
+pygmentsCodefences: true
+pygmentsStyle: tango
+#pygmentsuseclasses: true
 
 outputs:
   home: ["HTML", "RSS"]
