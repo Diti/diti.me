@@ -2,43 +2,44 @@
 <script async defer>
   'use strict';
 
-requestCryptoPrices('eth')
-  .then((prices) => JSON.parse(prices).{{ .Get 1 | lower | safeJS }})
-  .then((priceInEur) => {
-    requestEthBalance({{ .Get 0 }})
-      .then((balance) => JSON.parse(balance).result)
-      .then((balanceInEth) => {
-        return {
-          ethBalance: balanceInEth / 1000000000000000000,
-          ethPrice: priceInEur,
-        }
-      })
-      .then((data) => {
-        //document.querySelector(".ethPrice").innerHTML = data.ethPrice;
-        //document.querySelector(".ethBalance").innerHTML = data.ethBalance;
-        document.querySelector('.eurBalance').innerHTML = (data.ethPrice * data.ethBalance).toFixed(2);
-      })
-      .catch((e) => console.log(e))
-  })
-  .catch(console.log.bind(console));
+  requestCryptoPrices('ethereum')
+    .then((prices) => JSON.parse(prices))
+    .then((json) => {
+      var priceInEur = json[0].price_eur;
+      requestEthBalance('0xF7662d30957Cdd805422b47D009b6682860fC8d1')
+        .then((balance) => JSON.parse(balance).result)
+        .then((balanceInEth) => {
+          return {
+            ethBalance: balanceInEth / 1000000000000000000,
+            ethPrice: priceInEur,
+          }
+        })
+        .then((data) => {
+          document.querySelector('.eurBalance').innerHTML = (data.ethPrice * data.ethBalance).toFixed(2);
+        })
+        .catch((e) => console.log(e))
+    })
+    .catch(console.log.bind(console));
 
-function requestCryptoPrices(crypto) {
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://coinmarketcap-nexuist.rhcloud.com/api/' + crypto + '/price');
-    xhr.onload = () => resolve(xhr.responseText);
-    xhr.onerror = () => reject(xhr.statusText);
-    xhr.send();
-  });
-}
+  function requestCryptoPrices(crypto) {
+    return new Promise((resolve, reject) => {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://api.coinmarketcap.com/v1/ticker/' + crypto + '/?convert=EUR');
+      xhr.onload = () => resolve(xhr.responseText);
+      xhr.onprogress = () => document.querySelector('.eurBalance').textContent = "(Requesting prices…)";
+      xhr.onerror = () => reject(xhr.statusText);
+      xhr.send();
+    });
+  }
 
-function requestEthBalance(address) {
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://api.etherscan.io/api?module=account&action=balance&address=' + address + '&tag=latest&apikey=JJ2VMSF45M5PWRS5Z2UTF7FRW4ZNK52I61');
-    xhr.onload = () => resolve(xhr.responseText);
-    xhr.onerror = () => reject(xhr.statusText);
-    xhr.send();
-  });
-}
+  function requestEthBalance(address) {
+    return new Promise((resolve, reject) => {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://api.etherscan.io/api?module=account&action=balance&address=' + address + '&tag=latest&apikey=JJ2VMSF45M5PWRS5Z2UTF7FRW4ZNK52I61');
+      xhr.onload = () => resolve(xhr.responseText);
+      xhr.onprogress = () => document.querySelector('.eurBalance').textContent = "(Checking account balance…)";
+      xhr.onerror = () => reject(xhr.statusText);
+      xhr.send();
+    });
+  }
 </script>
