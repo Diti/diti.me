@@ -17,10 +17,10 @@
       <dt>{{ i18n "section.read.rating" }}</dt>
       <dd>
         {{- if eq . 0 -}}☆☆☆☆☆
-        {{- else if and (gt . 1) (le . 2) -}}★☆☆☆☆
-        {{- else if and (gt . 2) (le . 3) -}}★★☆☆☆
-        {{- else if and (gt . 3) (le . 4) -}}★★★☆☆
-        {{- else if and (gt . 4) (le . 5) -}}★★★★☆
+        {{- else if and (ge . 1) (lt . 2) -}}★☆☆☆☆
+        {{- else if and (ge . 2) (lt . 3) -}}★★☆☆☆
+        {{- else if and (ge . 3) (lt . 4) -}}★★★☆☆
+        {{- else if and (ge . 4) (lt . 5) -}}★★★★☆
         {{- else -}}{{ . }}
         {{- end -}}
       </dd>
