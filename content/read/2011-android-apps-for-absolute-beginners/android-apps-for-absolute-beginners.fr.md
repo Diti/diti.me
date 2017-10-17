@@ -1,10 +1,10 @@
 ---
 title: Android Apps for Absolute Beginners (première édition)
-language: 🇬🇧
+language: en
 authors:
   - Wallace Jackson
 format: Kindle
-rating: 2.5/5
+rating: 2.5 # /5
 date: 2011-11-26
 description: >-
   Ce livre, que j’ai acheté en novembre 2011, m’a appris le nécessaire sur le
