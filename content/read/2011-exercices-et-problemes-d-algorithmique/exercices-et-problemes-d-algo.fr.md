@@ -1,15 +1,21 @@
 ---
-language: fr
 title: Exercices et problèmes d’algorithmique
-author: [Nicolas Flasque, Franck Lepoivre, Helen Kassel, Boris Velikson]
-rating: 3/5
+language: fr
+authors:
+  - Nicolas Flasque
+  - Franck Lepoivre
+  - Helen Kassel
+  - Boris Velikson
+format: papier
+rating: 3.5 # /5
+date: 2011-10-22
 description: >- 
   Écrit par des professeurs de l’Efrei, ce livre, acheté en octobre 2011, était
   une lecture « essentielle » durant mes études à cette école.
-date: 2011-10-22
-format: paperback
 link: https://www.amazon.com/dp/210053310X
-tags: [ dev ]
+tags:
+  - algo
+  - dev
 ---
 
 J’ai acheté ce livre alors que j’étais en classe préparatoire à
