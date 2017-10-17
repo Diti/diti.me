@@ -4,7 +4,7 @@ language: fr
 authors:
   - Cyril Mottier
   - Ludovic Perrier
-rating: 4/5
+rating: 4 # /5
 description: >-
   Un livre sur Android 2 par Cyril Mottier, acheté en novembre 2011, qui parle
   de l’optimisation de ses applications Android. 
