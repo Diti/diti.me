@@ -21,6 +21,9 @@
 - id: 'section.read.format'
   translation: 'Format'
 
+- id: 'section.read.rating'
+  translation: 'Note'
+
 - id: 'shortcodes.latestContent.recent'
   translation: 'Contenu récent'
 

@@ -1,6 +1,8 @@
 {{ define "main" -}}
   <h1 class="title">{{ .Title }}</h1>
-  <p class="subtitle">{{ i18n "section.read.on_date" (dict "Date" (.Date | dateFormat "2006-01-02")) }}</p>
+  <p class="subtitle">{{ i18n "section.read.on_date" (dict "Date" (.Date | dateFormat "2006-01-02")) }}
+    {{- with .Params.link }} • <a href="{{ . }}">🛍</a>{{ end -}}
+  </p>
 
   <dl class="content">
     {{ with .Params.authors -}}
@@ -10,6 +12,18 @@
     {{ with .Params.format -}}
       <dt>{{ i18n "section.read.format" }}</dt>
       <dd>{{ . }}</dd>
+    {{- end }}
+    {{ with .Params.rating -}}
+      <dt>{{ i18n "section.read.rating" }}</dt>
+      <dd>
+        {{- if eq . 0 -}}☆☆☆☆☆
+        {{- else if and (gt . 1) (le . 2) -}}★☆☆☆☆
+        {{- else if and (gt . 2) (le . 3) -}}★★☆☆☆
+        {{- else if and (gt . 3) (le . 4) -}}★★★☆☆
+        {{- else if and (gt . 4) (le . 5) -}}★★★★☆
+        {{- else -}}{{ . }}
+        {{- end -}}
+      </dd>
     {{- end }}
   </dl>
 
