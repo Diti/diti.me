@@ -1,5 +1,5 @@
 ---
-title: The Art of War
+title: L’Art de la guerre
 language: fr
 authors:
   - Sun Tzu
