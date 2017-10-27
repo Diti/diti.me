@@ -29,12 +29,12 @@ commencez par installer Parity avec Homebrew :
     [parity]
     chain = "ropsten"
     base_path = "/goinfre/io.parity.ethereum"
-    
+
     [footprint]
-    db_compaction = "hdd" 
+    db_compaction = "hdd"
     ```
 
-3. Assurez-vous que le dossier sus-cité, que va utiliser Parity pour ses données, existe : 
+3. Assurez-vous que le dossier sus-cité, que va utiliser Parity pour ses données, existe :
 
     ``` sh
     mkdir /goinfre/io.parity.ethereum
@@ -57,5 +57,5 @@ commencez par installer Parity avec Homebrew :
   de config), et de fournir une [interface JSON-RPC](https://github.com/paritytech/parity/wiki/JSONRPC)
   sur le port 8545.
 - Dans votre navigateur, vous pouvez demander à [MetaMask](https://metamask.io/) d’utiliser
-  n’importe quelle blockchain sur laquelle Parity est synchronisée (cf. [vos préférences](http://127.0.0.1:8180/#/settings/parity)
+  n’importe quelle blockchain sur laquelle Parity est synchronisée (cf. [vos préférences](http://127.0.0.1:8180/#/settings/parity))
   en choisissant « Localhost 8545 ».

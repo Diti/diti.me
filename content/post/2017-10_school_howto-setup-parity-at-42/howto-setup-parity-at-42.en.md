@@ -28,12 +28,12 @@ start off by installing Parity using Homebrew:
     [parity]
     chain = "ropsten"
     base_path = "/goinfre/io.parity.ethereum"
-    
+
     [footprint]
-    db_compaction = "hdd" 
+    db_compaction = "hdd"
     ```
 
-3. Make sure the aforementioned directory exists for Parity to store its contents on: 
+3. Make sure the aforementioned directory exists for Parity to store its contents on:
 
     ``` sh
     mkdir /goinfre/io.parity.ethereum
