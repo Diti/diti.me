@@ -6,13 +6,16 @@ authors:
   - Franck Lepoivre
   - Helen Kassel
   - Boris Velikson
-format: papier
 rating: 3.5 # /5
 date: 2011-10-22
 description: >- 
   Écrit par des professeurs de l’Efrei, ce livre, acheté en octobre 2011, était
   une lecture « essentielle » durant mes études à cette école.
+format: papier
+isbn: 9782100533107
 link: https://www.amazon.com/dp/210053310X
+categories:
+  - Pengeek
 tags:
   - algo
   - dev

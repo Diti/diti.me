@@ -1,14 +1,13 @@
 ---
 title: The Art of War
-language: fr
+language: en
 authors:
   - Sun Tzu
   - Joseph-Marie Amiot
 rating: 4 # /5
-description: 
 date: 2011-12-30
+description: 
 format: Kindle
-link: https://www.amazon.com/dp/B004CYEUFG
 tags:
   - classical
 ---

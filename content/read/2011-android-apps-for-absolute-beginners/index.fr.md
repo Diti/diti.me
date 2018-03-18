@@ -3,19 +3,20 @@ title: Android Apps for Absolute Beginners (première édition)
 language: en
 authors:
   - Wallace Jackson
-format: Kindle
 rating: 2.5 # /5
 date: 2011-11-26
 description: >-
   Ce livre, que j’ai acheté en novembre 2011, m’a appris le nécessaire sur le
   développement Android avec Java. Je n’avais auparavant aucune expérience de
   Java ou du SDK Android.
-link: https://www.amazon.fr/dp/1430234466/
+format: Kindle
+isbn: 9781430234463
 categories:
   - Pengeek
 tags:
   - Android
   - dev
+  - Java
 ---
 
 Ce livre m’a appris le nécessaire quand j’ai voulu démarrer le développement sur

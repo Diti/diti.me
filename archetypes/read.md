@@ -1,10 +1,13 @@
 ---
 title: {{ replace .TranslationBaseName "-" " " | title }}
+language:
 authors: []
-format:
 rating: # /5
 date: {{ .Date }}
 description:
+format:
+isbn:
 link:
+categories: []
 tags: []
 ---

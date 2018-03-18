@@ -1,11 +1,13 @@
 ---
-draft: true
 title: The Jungle Book
+language: fr
 authors: [Rudyard Kipling]
-format: ebook
 rating: 3 # /5
 date: 2011-12-26
 description:
-link: https://www.amazon.com/gp/product/B0084B1T8Y
+format: Kindle
+isbn: 
+link: https://www.amazon.com/gp/product/B005R45LQC
+categories: []
 tags: [classical]
 ---

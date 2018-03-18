@@ -5,18 +5,21 @@ authors:
   - Cyril Mottier
   - Ludovic Perrier
 rating: 4 # /5
+date: 2011-11-26
 description: >-
   Un livre sur Android 2 par Cyril Mottier, acheté en novembre 2011, qui parle
   de l’optimisation de ses applications Android. 
-date: 2011-11-26
 format: Kindle
-link: https://cyrilmottier.com/2011/03/14/developpez-pour-android-enfin-disponible/
+isbn: 9782815002028
+link: https://cyrilmottier.com/2011/03/14/developpez-pour-android-enfin-disponible
+categories:
+  - Pengeek
 tags:
   - Android
   - dev
 ---
 
-Écrit par [Cyril Mottier](http://cyrilmottier.com), ce livre, rendu
+Écrit par [Cyril Mottier](https://cyrilmottier.com), ce livre, rendu
 partiellement obsolète depuis la sortie d’Android 4, discutait de thèmes
 intéressants liés à l’optimisation.
 

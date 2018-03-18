@@ -4,6 +4,11 @@
     {{- with .Params.link }} • <a href="{{ . }}">🛍</a>{{ end -}}
   </p>
 
+  {{ with .Resources.GetMatch "cover.jpg" -}}
+  {{ $scaled := .Fit "200x200" }}
+    <p><img alt="Cover" src="{{ $scaled.Permalink }}"></p>
+  {{- end }}
+
   <dl class="content">
     {{ with .Params.authors -}}
       <dt>{{ i18n "section.read.author" (len .) }}</dt>
@@ -11,7 +16,7 @@
     {{- end }}
     {{ with .Params.format -}}
       <dt>{{ i18n "section.read.format" }}</dt>
-      <dd>{{ . }}</dd>
+      <dd>{{ . }}{{ with $.Params.isbn }} <small>(ISBN {{ . }})</small>{{ end }}</dd>
     {{- end }}
     {{ with .Params.rating -}}
       <dt>{{ i18n "section.read.rating" }}</dt>
